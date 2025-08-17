@@ -22,7 +22,7 @@ X_test = df_test.drop(columns='chased_successfully')
 X_test = X_test.drop(columns=columns_to_drop, errors='ignore')
 y_test = df_test['chased_successfully']
 
-#Create the dataframe for model testing
+#Create the dataframe for model training
 df_main = df[df['year'] != 2025]
 X = df_main.drop(columns='chased_successfully')
 X = X.drop(columns=columns_to_drop, errors='ignore')
