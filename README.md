@@ -27,12 +27,12 @@ The project uses a **Random Forest Classifier** with hyperparameter tuning and i
 ---
 
 ## 📂 Repository Structure
-- win_viz_df.xlsx # Input dataset contained in the Git folder
-- ipl_win_viz_modelling.py # Main training and evaluation script
-- results.xlsx # (Generated) CV results exported for analysis
-- rf_model.pkl # (Generated) Saved optimal Random Forest model
-- README.md # Project documentation
-- requirements.txt # Dependencies
+- win_viz_df.xlsx -> Input dataset contained in the Git folder
+- ipl_win_viz_modelling.py -> Main training and evaluation script
+- results.xlsx -> (Generated) CV results exported for analysis
+- rf_model.pkl -> (Generated) Saved optimal Random Forest model
+- README.md -> Project documentation
+- requirements.txt -> Dependencies
 
 ## ⚙️ Installation
 
@@ -56,7 +56,7 @@ The project uses a **Random Forest Classifier** with hyperparameter tuning and i
 2. Update paths inside model_training.py where marked:
     - df = pd.read_excel('#Enter path to dataset here')
     - results_df.to_excel('#Enter path to output results for analysis')
-    - joblib.dump(rf_best_model, '#Enter path to output model/rf_model.pkl'). You can use this for future predictions of in-game win probabilities.
+    - joblib.dump(rf_best_model, '#Enter path to output model/rf_model.pkl'). You can use this pickle file to model future in-game win probabilities.
 3. Run the script:
     - ipl_win_viz_modelling.py
 
